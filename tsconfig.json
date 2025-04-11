@@ -1,0 +1,16 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "nativewind-env.d.ts"
+, "app/index.jsx", "app/(tabs)/chats.jsx", "app/(tabs)/appointments.jsx", "app/(tabs)/_layout.jsx", "app/(tabs)/profile.jsx", "app/booking/[id].jsx", "app/chat/[id].jsx", "app/doctor/[id].jsx", "app/doctors/[categoryId].jsx", "app/_layout.jsx", "app/+not-found.jsx"  ]
+}
