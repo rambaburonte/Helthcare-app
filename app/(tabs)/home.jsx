@@ -2,16 +2,24 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image, SafeAreaVi
 import { useRouter } from 'expo-router';
 import { Search } from 'lucide-react-native';
 import { categories, featuredDoctors } from '@/data/mockData';
+import { useUser } from '../../UserContext';
+import { useEffect } from 'react';
+
 
 export default function HomeScreen() {
   const router = useRouter();
+  const { user } = useUser();
+
+  useEffect(() => {
+    console.log('User data:------------------------------------->bshs', user);
+  }, []);
 
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={styles.header}>
-            <Text style={styles.greeting}>Hello, John! 👋</Text>
+            <Text style={styles.greeting}>{user?.username} 👋</Text>
             <Text style={styles.subtitle}>Find your suitable doctor</Text>
           </View>
 

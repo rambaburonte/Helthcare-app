@@ -51,6 +51,12 @@ export default function TabsLayout() {
           href: null, // ✅ Hides index screen from bottom tab bar
         }}
       />
+      <Tabs.Screen
+        name="notifications"
+        options={{
+          href: null
+        }}
+      />
     </Tabs>
   );
 }

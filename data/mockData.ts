@@ -24,6 +24,21 @@ export const categories = [
     name: 'Psychiatrist',
     icon: 'https://cdn-icons-png.flaticon.com/128/3344/3344333.png',
   },
+  {
+    id: '6',
+    name: 'Orthopedic',
+    icon: 'https://cdn-icons-png.flaticon.com/128/3344/3344328.png',
+  },
+  {
+    id: '7',
+    name: 'Oncologist',
+    icon: 'https://cdn-icons-png.flaticon.com/128/3344/3344330.png',
+  },
+  {
+    id: '8',
+    name: 'ENT Specialist',
+    icon: 'https://cdn-icons-png.flaticon.com/128/3344/3344326.png',
+  },
 ];
 
 export const featuredDoctors = [
@@ -78,6 +93,94 @@ export const featuredDoctors = [
     location: 'Children\'s Medical Center, Chicago',
     consultationFee: 450,
   },
+  {
+    id: '4',
+    name: 'Raj Mehta',
+    specialty: 'Orthopedic',
+    experience: '18 years',
+    rating: 4.7,
+    reviews: 89,
+    image: 'https://images.unsplash.com/photo-1573497019412-b2f4e85ba3f8?w=400',
+    availability: ['Tue', 'Thu'],
+    about: 'Dr. Raj Mehta is a highly experienced orthopedic surgeon known for his minimally invasive techniques and patient-first approach.',
+    education: [
+      'MBBS from AIIMS Delhi',
+      'Orthopedic Surgery Residency at Cleveland Clinic',
+    ],
+    location: 'Bone & Joint Hospital, Mumbai',
+    consultationFee: 600,
+  },
+  {
+    id: '5',
+    name: 'Linda Park',
+    specialty: 'Oncologist',
+    experience: '20 years',
+    rating: 4.9,
+    reviews: 103,
+    image: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400',
+    availability: ['Mon', 'Wed'],
+    about: 'Dr. Linda Park is a pioneer in cancer immunotherapy and has helped thousands of patients in their cancer journey.',
+    education: [
+      'MD from Harvard Medical School',
+      'Oncology Fellowship at MD Anderson Cancer Center',
+    ],
+    location: 'Cancer Institute, San Francisco',
+    consultationFee: 700,
+  },
+  {
+    id: '6',
+    name: 'John Doe',
+    specialty: 'Neurologist',
+    experience: '8 years',
+    rating: 4.6,
+    reviews: 76,
+    image: 'https://images.unsplash.com/photo-1589571894960-2f4e3b7a1c5f?w=400',
+    availability: ['Mon', 'Thu'],
+    about: 'Dr. John Doe is a neurologist specializing in epilepsy and neurodegenerative disorders. He is known for his patient-centered approach and thorough evaluations.',
+    education: [
+      'MD from Yale University',
+      'Neurology Residency at Johns Hopkins Hospital',
+    ],
+    location: 'Neurology Clinic, Boston',
+    consultationFee: 550,
+  },
+  {
+    id: '7',
+    name: 'Jane Smith',
+    specialty: 'Psychiatrist',
+    experience: '15 years',
+    rating: 4.8,
+    reviews: 120,
+    image: 'https://images.unsplash.com/photo-1589571894960-2f4e3b7a1c5f?w=400',
+    availability: ['Tue', 'Fri'],
+    about: 'Dr. Jane Smith is a psychiatrist specializing in adolescent mental health and mood disorders. She is dedicated to providing holistic care to her patients.',
+    education: [
+      'MD from University of Michigan',
+      'Psychiatry Residency at Massachusetts General Hospital',
+    ],
+    location: 'Mental Health Center, Seattle',
+    consultationFee: 500,
+  },
+  {
+    id: '8',
+    name: 'Alice Johnson',
+    specialty: 'ENT Specialist',
+
+    experience: '10 years',
+    rating: 4.5,
+    reviews: 85,
+    image: 'https://images.unsplash.com/photo-1589571894960-2f4e3b7a1c5f?w=400',
+    availability: ['Wed', 'Fri'],
+    about: 'Dr. Alice Johnson is an ENT specialist with a focus on sinus surgery and allergy management. She is known for her compassionate care and thorough evaluations.',
+    education: [
+      'MD from University of California, San Diego',
+      'ENT Residency at Johns Hopkins Hospital',
+    ],
+    location: 'ENT Clinic, Houston',
+    consultationFee: 480,
+  },
+
+  
 ];
 
 export const appointments = [
@@ -113,6 +216,40 @@ export const appointments = [
     time: '3:00 PM',
     status: 'confirmed',
   },
+  {
+    id: '5',
+    doctorName: 'Raj Mehta',
+    specialty: 'Orthopedic',
+    date: '2024-03-12',
+    time: '9:00 AM',
+    status: 'confirmed',
+  },
+  {
+    id: '6',
+    doctorName: 'Linda Park',
+    specialty: 'Oncologist',
+    date: '2024-03-18',
+    time: '1:00 PM',
+    status: 'completed',
+  },
+  {
+    id: '7',
+    doctorName: 'Michael Chen',
+    specialty: 'Dermatologist',
+    date: '2024-03-20',
+    time: '4:30 PM',
+    status: 'confirmed',
+  },
+  {
+    id: '8',
+    doctorName: 'John Doe',
+    specialty: 'Neurologist',
+    date: '2024-03-25',
+    time: '10:30 AM',
+    status: 'confirmed',
+  },
+  
+  
 ];
 
 export const chats = [
@@ -140,4 +277,21 @@ export const chats = [
     lastMessageTime: '2 days ago',
     unreadCount: 1,
   },
+  {
+    id: '4',
+    doctorName: 'Raj Mehta',
+    doctorImage: 'https://images.unsplash.com/photo-1573497019412-b2f4e85ba3f8?w=400',
+    lastMessage: 'Please avoid heavy lifting for the next two weeks.',
+    lastMessageTime: '3 hours ago',
+    unreadCount: 0,
+  },
+  {
+    id: '5',
+    doctorName: 'Linda Park',
+    doctorImage: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400',
+    lastMessage: 'Lab reports look good. Let’s follow up next week.',
+    lastMessageTime: 'Today',
+    unreadCount: 1,
+  },
+  
 ];

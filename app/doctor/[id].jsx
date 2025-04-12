@@ -66,7 +66,7 @@ export default function DoctorProfileScreen() {
 
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Consultation Fee</Text>
-          <Text style={styles.feeText}>₹8521{doctor.consultationFee}</Text>
+          <Text style={styles.feeText}>₹{doctor.consultationFee}</Text>
         </View>
 
         <View style={styles.buttonContainer}>
